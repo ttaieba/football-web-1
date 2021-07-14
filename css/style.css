@@ -128,6 +128,50 @@ p{
 }
 /*----- player list sectiont design end----- */
 
+/*--------------------------
+Our achievement design start
+-----------------------------  */
+
+.our-achivement{
+    width: 1250px;
+    padding: 30px;
+    background-color: snow;
+    margin-top: 20px;
+}
+
+.achievement-title{
+    display: flex;
+    justify-content: center;
+    color: lightslategrey;
+}
+
+.achieve-list{
+    
+    padding: 30px;
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-gap: 15px;
+   
+  
+}
+
+.achievement{
+    margin: 20px 0px;
+    border-right: 1px solid rgb(236, 235, 235);
+    
+}
+.achievement img{
+    width: 100px;
+    height: 200px;
+}
+.achievement p{
+    text-align: justify;
+    margin-right: 10px;
+}
+
+/* Our achievement design end
+-----------------------------  */
+
 
 
 
@@ -164,7 +208,7 @@ footer{
     color: #000;
 }
 
-
+/*-------- footer design------- */
 
 
 
@@ -178,8 +222,8 @@ media queris
 
 /*---- for mobile ---- */
 @media only screen and (max-width:688px) {
-    .container{width: 100%;}
-    .player-list{
+    .container, .our-achivement {width: 100%;}
+    .player-list, .achieve-list {
         grid-template-columns: repeat(1, 1fr);
         
 
@@ -188,8 +232,8 @@ media queris
 
 /*---- for tab ---- */
 @media only screen and (min-width:690px) and (max-width:992){
-    .container{width: 100%;}
-    .player-list
+    .container, .our-achivement {width: 100%;}
+    .player-list, .achieve-list
     {grid-template-columns: repeat(2, 1fr);
         
 
