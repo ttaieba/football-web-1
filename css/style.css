@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f3f1ff;
+}
+
+/*------------------------
+ header design----------- */
+header{
+    background: #562EFF;
+    height: 677px;
+    width: 1440px;
+
+
+}
+nav{
+display: flex;
+justify-content: space-around;
+color: #ffff;
+}
+.title{
+    margin-top: 100px;
+    margin-left: 130px;
+    width: 485px;
+    height: 200px;
+    
+
+}
+h1{
+    font-size: 60px;
+}
+
+button{
+    background-color: #E02C6D;
+    color: #ffff;
+    font-size: 16px;
+    padding: 15px;
+    
+}
+button:hover{
+    padding-right: 40px;
+    cursor: pointer; 
+    background-color: rgb(230, 117, 201);
+    border-radius: 20px;
+}
+
+.banner{
+    margin-top: 130px;
+    margin-right: 120px;
+}
+#banner-top{
+    width: 556px;
+    height: 445px;
+    
+
+}
+    
+
+/*------------------------
+ header design end----- */
+
+
+
+/* -- ------------------
+main contant design
+------------------------- */
+
+main{display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container{
+    width: 1050px;
+    height: 679px;  
+    padding: 30px;
+    margin-top: 20px;    
+    
+}
+/*----- player list sectiont design----- */
+.players{
+    margin-bottom: 40px;
+}
+
+.player-list{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 30px;
+    
+    
+}
+
+.player{
+    
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 5px 3px 1px lavender;
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+   
+}
+
+.player-info{
+    width: 300px;
+    height: 170px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+h3{
+   
+    font-size: 25px;
+    color: #18191F
+    
+}
+
+p{  
+    color: #6C6C6C;
+    font-size: 15px;
+    text-align:justify ;
+    
+       
+}
+/*----- player list sectiont design end----- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------
+media queris
+--------------------- */
+
+/*---- for mobile ---- */
+@media only screen and (max-width:688px) {
+    .container{width: 100%;}
+    .player-list{
+        grid-template-columns: repeat(1, 1fr);
+        
+
+    }
+}
+
+/*---- for tab ---- */
+@media only screen and (min-width:690px) and (max-width:992){
+    .container{width: 100%;}
+    .player-list
+    {grid-template-columns: repeat(2, 1fr);
+        
+
+    }
+}
+
+/* ---------------------
+media queris
+--------------------- */
