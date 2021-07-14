@@ -123,10 +123,55 @@ p{
     color: #6C6C6C;
     font-size: 15px;
     text-align:justify ;
+
     
        
 }
 /*----- player list sectiont design end----- */
+
+
+/* -------------------
+spacial-features design staer
+--------------------------- */
+.spacial-features{
+    background-color: #18191F;
+    width: 1250px;
+    padding: 30px;
+    margin-top: 20px;
+    
+}
+.features{
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 30px;
+
+}
+
+.feature-item{
+    background-color:snow;
+    opacity: .75;
+   
+}
+
+
+.feature-item p{
+    margin-left: 20px;
+}
+
+.feature-item h4{
+    margin-left: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: snow;
+}
+
+/* spacial-features design staer
+--------------------------- */
+
+
 
 /*--------------------------
 Our achievement design start
