@@ -17,7 +17,7 @@ header{
 nav{
     padding: 20px;
     display: grid;
-    grid-template-columns:repeat(2, 2fr);
+    grid-template-columns:repeat(2, 1fr);
     grid-gap: 30px;
 color: #ffff;
 }
@@ -230,12 +230,14 @@ footer{
     flex-direction: column;
     align-items: center;
     
+    
 
 }
 
 .logo{
     width: 400px;
     height: 100px;
+    
 }
 .icon {
     position: relative;
@@ -272,19 +274,41 @@ media queris
 
 
 @media only screen and (max-width:688px) {
-    .container, .our-achivement, .spacial-features {width: 100%;}
-    .player-list, .achieve-list, .features{
+    .container, .our-achivement, .spacial-features, header {width: 100%;}
+    .player-list, .achieve-list, .features, nav{
         grid-template-columns: repeat(1, 1fr);
         
 
     }
 
-    footer .logo{
-        width: 310px;
-        height: 100px;}
+    nav{
+        position: relative;
+    }
+    
 
-        
+        .banner{
+            margin-top: 30px;
+            margin-right: 50px;
+        }
+        #banner-top{
+            width: 350px;
+            height: 100px;
+            position: absolute;
+            bottom: -500px;
+        }
 
+            .title{
+                margin-top: 0px;
+                margin-left: 30px;
+                width: 330px;
+                height: 50px;
+                font-size: 20px;
+
+            }
+            
+            footer .logo{
+                width: 310px;
+                height: 100px;}
 }
 
 
